@@ -79,8 +79,8 @@ body {
 }
 
 .user .share-btn {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: hsl(214, 17%, 51%, 0.2);
     display: flex;
@@ -88,6 +88,14 @@ body {
     justify-content: center;
     cursor: pointer;
     margin-left: auto;
+}
+
+svg {
+    fill: #6E8098;
+}
+
+.white {
+    fill: #fff;
 }
 
 .hover-active-bg {
@@ -115,6 +123,15 @@ body {
     color: hsl(212, 23%, 69%);
     font-weight: 600;
     letter-spacing: 3px;
+}
+
+.sharebox::after {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: 45%;
+    border: 0.8rem solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
 }
 
 
