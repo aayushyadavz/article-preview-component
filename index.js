@@ -9,6 +9,27 @@ shareBtn.addEventListener("click", function(){
     shareBtn.classList.toggle("hover-active-bg")
 })
 
+fbBtn.addEventListener("click", function(){
+    window.open(
+        'https://www.facebook.com/sharer/sharer.php?u=https://my-article-card.netlify.app/&quote=Here\'s my first article, you can read 👉',
+        'Share Window',
+        'width=600,height=300'
+      );
+      
+})
+
 tweetBtn.addEventListener("click", function(){
-    window.open(`https://twitter.com/intent/tweet?text=http://127.0.0.1:5500/index.html#`, `Tweet Window`, `width=600px height=300px`)
+    window.open(
+        'https://twitter.com/intent/tweet?text=Here\'s my first article, you can read 👉 https://my-article-card.netlify.app/',
+        'Tweet Window',
+        'width=600,height=300'
+      );
+})
+
+pintBtn.addEventListener("click", function(){
+    window.open(
+        'https://www.pinterest.com/pin/create/button/?url=https://my-article-card.netlify.app/&description=Here\'s my first article, you can read 👉',
+        'Share Window',
+        'width=600,height=300'
+      );      
 })
